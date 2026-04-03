@@ -1,0 +1,21 @@
+{
+  "name": "port-wizard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "port-wizard": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "scan": "tsx src/cli.ts scan",
+    "list": "tsx src/cli.ts list",
+    "suggest": "tsx src/cli.ts suggest",
+    "reserve": "tsx src/cli.ts reserve"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
